@@ -46,4 +46,16 @@ Tools that support CI/CD:
 What is a context in actions?
 dumping the github event payload inside the pipeline run.
 
+If you are getting the following error when you run these aciton codes:
+ 
+`Resource not accessible by integration.` 
+
+Following these steps may solve the problem.
+1- Go to repository "Settings".
+2- After that it will show you a left pane where you will find "Actions"
+3- Expand "Actions" tab
+4- Click on "General" under options tab.
+5- Now on new page scroll down and you will fine "Workflow Permissions"
+6- Select "Read and Write" under "Workflow Permissions".
+
 
