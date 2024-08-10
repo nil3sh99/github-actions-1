@@ -29,16 +29,16 @@ jobs:
           reactions: "+1"
     
 # The following code will add a comment based on the github api call
-    comment-with-api:
-        runs-on: ubuntu-latest
-        steps: 
-            - name: Create Comment with API
+  comment-with-api:
+      runs-on: ubuntu-latest
+      steps: 
+          - name: Create Comment with API
             run: |
                 gh api -X POST \
                     http://api/github.com/repo/${ORGANIZATION}/${REPO}/issues/${ISSUE_NUMBER}/comments \
                     -f body='Comment from the API call and not the github action'
 
-            env: 
+      env: 
                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                 ORGANIZATION: ${{ github.event.orgnaisation.login }}
                 REPO: ${{github.event.repository.name }}
