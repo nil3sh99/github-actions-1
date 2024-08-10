@@ -30,4 +30,16 @@ Tools that support CI/CD:
 
 **GitHub Actions**: Native CI/CD workflows integrated with GitHub repositories.
 
+## Events of GitHub Actions
+
+- Events
+  - Pull, Push, Issue (create, close etc.)
+  - tied to workflows
+- Jobs
+  - composed of steps
+  - associated with runners
+    - Runners come in different flavors (GitHub hosted runners OR self-hosted runners)
+- Step
+  - composed of actions
+
 

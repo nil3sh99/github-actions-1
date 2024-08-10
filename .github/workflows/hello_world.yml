@@ -1,0 +1,28 @@
+name: Hello World worklow
+
+on: 
+    push: 
+        branches: 
+            - main
+    pull_request: 
+        branches:
+            - main
+    workflow_dispatch:
+
+jobs: 
+    hello: 
+        runs-on: ubuntu-latest
+        steps: 
+            - uses: actions/checkout@v2
+            # this is a community action, but your own action can be created as well
+            - name: Hello world
+              run: echo "Hello Nilesh Aggarwal"
+              shell: bash
+
+    goodbye:
+        runs-on: ubuntu-latest
+        steps:
+            - name: goodbye world
+              run: echo "GoodBye Nilesh"
+              shell: bash
+
