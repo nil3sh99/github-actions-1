@@ -43,3 +43,7 @@ Tools that support CI/CD:
   - composed of actions
 
 
+What is a context in actions?
+dumping the github event payload inside the pipeline run.
+
+
