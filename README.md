@@ -59,3 +59,22 @@ Following these steps may solve the problem.
 6- Select "Read and Write" under "Workflow Permissions".
 
 
+## What do we need to support CI (Continuous Integration)
+- Automate the builds
+  - Running the scripts for builds
+
+- Automated Tests
+  - Unit tests
+  - Integration tests
+
+- Linting
+  - Unified coding style across the code base
+
+- Security checks/scanning
+  - chekovs etc.
+
+When we want to merge the features into the main branch, then a PR is created. 
+When a PR is created all these steps mentioned above are ran and only when the tests are sucessfull, then only merge is accpeted. 
+
+Tests are localized in each PR, but we need tests in the main brach as well, because we want to test the changes already in the main branch with the new changes, so that verification is complete. 
+
